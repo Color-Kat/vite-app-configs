@@ -5,8 +5,8 @@ function App() {
 
     return (
         <>
-            <h1>Color config</h1>
-            <div className="card">
+            <h1 className="text-2xl font-bold">Color config</h1>
+            <div className="font-roboto">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
@@ -14,7 +14,7 @@ function App() {
                     Edit <code>src/App.tsx</code> and save to test HMR
                 </p>
             </div>
-            <p className="read-the-docs">
+            <p className="">
                 Click on the Vite and React logos to learn more
             </p>
         </>
