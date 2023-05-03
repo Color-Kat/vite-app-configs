@@ -5,7 +5,6 @@ import * as path from "path";
 export default defineConfig({
   build: {
     outDir: path.join(__dirname, "public"),
-
   },
   base: './',
   plugins: [
