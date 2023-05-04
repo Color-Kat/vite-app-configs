@@ -1,23 +1,19 @@
 import {useState} from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HomePage} from "@pages/HomePage/HomePage";
+import {FavouritesPage} from "@pages/FavouritesPage/FavouritesPage";
+import {Layout} from "@modules/Layout";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <>
-            <h1 className="text-2xl font-bold">Color config</h1>
-            <div className="font-roboto">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="">
-                Click on the Vite and React logos to learn more
-            </p>
-        </>
+        <BrowserRouter>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/favourites" element={<FavouritesPage/>}/>
+                </Routes>
+            </Layout>
+        </BrowserRouter>
     );
 }
 
