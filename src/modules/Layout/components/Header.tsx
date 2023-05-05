@@ -7,11 +7,11 @@ export const Header = () => {
     return (
         <header className="flex justify-center items-center h-16 px-5 w-full bg-gray-100 text-gray-800">
             <div className="container flex justify-evenly items-center">
-                <Link to="/favourites">Favourites</Link>
+                <Link to="/favourites" className="hover:underline">Favourites</Link>
 
                 <Logo />
 
-                <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="https://github.com/" target="_blank" className="hover:underline">GitHub</a>
             </div>
         </header>
     );

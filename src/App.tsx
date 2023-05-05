@@ -5,7 +5,6 @@ import {FavouritesPage} from "@pages/FavouritesPage/FavouritesPage";
 import {Layout} from "@modules/Layout";
 
 function App() {
-    const [count, setCount] = useState(0);
 
     return (
         <BrowserRouter>
