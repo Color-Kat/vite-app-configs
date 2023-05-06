@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React, { memo } from 'react';
 
 const Footer: React.FC = () => {
 
@@ -8,21 +8,9 @@ const Footer: React.FC = () => {
             <div className="container px-5 flex-col md:flex-row flex justify-between gap-5">
 
                 <div className="text-gray-800 flex-1">
-
-                    Проект созданный для углублённого изучения модульной архитектуры фронтенда и redux toolkit.
-
+                    This project is made for deep learning of module frontend architecture
+                    and redux toolkit (RTK).
                 </div>
-
-                {/*<div className="text-gray-500 text-sm text-center">*/}
-                {/*    <h3>*/}
-                {/*        <i className="fa fa-youtube-play  mr-1"></i>*/}
-                {/*        <a href="" target="_blank" className="underline">YT</a>*/}
-                {/*    </h3>*/}
-                {/*    <h4>*/}
-                {/*        <i className="fa fa-vk mr-1"></i>*/}
-                {/*        <a href="https://vk.com/rx4dofficial" target="_blank" className="underline">VK</a>*/}
-                {/*    </h4>*/}
-                {/*</div>*/}
 
                 <div className="text-gray-700 text-sm text-center">
                     <h3>

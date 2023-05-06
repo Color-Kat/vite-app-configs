@@ -1,3 +1,4 @@
+import Page from '@/components/PageTemplates/Page';
 import { ReposList, ReposListRefType } from '@/modules/RepoList';
 import SearchUsers from '@/pages/HomePage/components/SearchUsers';
 import { useRef } from "react";
@@ -10,12 +11,12 @@ export const HomePage = () => {
     }
 
     return (
-        <div className="py-10 flex items-center flex-col">
-            <h1 className="text-center text-xl font-bold mb-5">Home Page</h1>
-
+        <Page
+            title="Search GH repositories"
+        >
             <SearchUsers onUserClick={userClickHandler} />
 
             <ReposList ref={reposListRef} />
-        </div>
+        </Page>
     );
 }
