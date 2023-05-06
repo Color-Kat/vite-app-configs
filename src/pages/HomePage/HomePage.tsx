@@ -1,6 +1,6 @@
+import { ReposList, ReposListRefType } from '@/modules/RepoList';
 import SearchUsers from '@/pages/HomePage/components/SearchUsers';
 import { useRef } from "react";
-import ReposList, { ReposListRefType } from "./components/ReposList";
 
 export const HomePage = () => {
     const reposListRef = useRef<ReposListRefType>(null);

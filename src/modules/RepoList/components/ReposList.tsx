@@ -1,33 +1,28 @@
 import LoadingMessage from "@/UI/Loaders/LoadingMessage";
 import { useLazyGetUserReposQuery } from "@/store/github/github.api";
-import { IRepo } from "@/types/gihubApiTypes";
-import { FunctionComponent, forwardRef, useImperativeHandle, Ref } from "react";
+import { forwardRef, useImperativeHandle, Ref } from "react";
+import RepoCard from "./RepoCard";
 
 export interface ReposListRefType {
     fetchRepos: any;
 }
 
-const ReposList = ({ }, ref: Ref<ReposListRefType>) => {
+export const ReposList = forwardRef(({ }, ref: Ref<ReposListRefType>) => {
 
     const [fetchRepos, { isLoading, data }] = useLazyGetUserReposQuery();
 
     useImperativeHandle(ref, () => ({ fetchRepos }));
 
-    console.log(data);
-
-
     return (
 
-        <div className="">
+        <div className="mt-5">
             {isLoading && <LoadingMessage text="Repos are loading" />}
 
             {data?.map((repo) => {
                 return (
-                    <p>{repo.url}</p>
+                    <RepoCard repo={repo} key={repo.id} />
                 );
             })}
         </div>
     );
-}
-
-export default forwardRef(ReposList);
+});

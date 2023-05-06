@@ -1,0 +1,1 @@
+export { ReposList, type ReposListRefType } from './components/ReposList';
