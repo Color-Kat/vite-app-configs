@@ -1,4 +1,4 @@
-import { ChangeEvent, FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 
 interface InputProps {
     type?: 'text' | 'number' | 'select';
@@ -18,6 +18,6 @@ const Input: FunctionComponent<InputProps> = ({type, value, placeholder, onChang
             onChange={(e) => onChange(e.target.value)}
         />
     );
-}
+};
 
 export default Input;

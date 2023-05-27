@@ -14,6 +14,6 @@ const Main: React.FC<{ children: React.ReactElement }> =
             </>
 
         );
-    }
+    };
 
 export default React.memo(Main);

@@ -7,4 +7,4 @@ export const Logo = () => {
             <Link to="/">GH</Link>
         </div>
     );
-}
+};

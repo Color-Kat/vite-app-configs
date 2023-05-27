@@ -9,7 +9,7 @@ const LS_FAVOURITE_KEY = 'github_favourites';
 
 const initialState: GithubState = {
     favourites: JSON.parse(localStorage.getItem(LS_FAVOURITE_KEY) ?? '[]')
-}
+};
 
 export const testSlice = createSlice({
     name: 'test',

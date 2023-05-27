@@ -12,7 +12,6 @@ module.exports = {
         {
             extend: {
                 colors: {
-                    transparent : 'transparent',
                     'app'       :
                         '#1a1a1d',
                     'app-dark'  :
