@@ -5,6 +5,7 @@ import {FavouritesPage} from "@pages/FavouritesPage/FavouritesPage";
 import {Layout} from "@modules/Layout";
 
 function App() {
+
     return (
         <BrowserRouter>
             <Layout>
